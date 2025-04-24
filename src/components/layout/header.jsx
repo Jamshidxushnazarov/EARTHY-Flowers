@@ -24,12 +24,12 @@ const Header = () => {
   ];
 
   const userMenuItems = [
-    { label: <Link to="/profile">Profil</Link>, key: 'profile' },
+    { label: <Link to="/admin">Admin</Link>, key: 'profile' },
     { label: <Link to="/orders">Buyurtmalarim</Link>, key: 'orders' },
-    { label: <Link to="/sign-in">Kirish</Link>, key: 'sign-in' },
+    { label: <Link to="/login">Kirish</Link>, key: 'sign-in' },
     {
       label: (
-        <Link to="/sign-up" className="text-green-600 font-medium">
+        <Link to="/register" className="text-green-600 font-medium">
           Roʻyxatdan oʻtish
         </Link>
       ),
