@@ -49,7 +49,7 @@ const Header = () => {
       <nav className="flex space-x-6">
         {[
           { path: '/', name: 'Bosh sahifa', key: 'home' },
-          { path: '/shop', name: 'Doʻkon', key: 'shop' },
+          { path: '/shoping', name: 'Doʻkon', key: 'shop' },
           { path: '/about', name: 'Biz haqimizda', key: 'about' },
           { path: '/contact', name: 'Aloqa', key: 'contact' },
         ].map((item) => (

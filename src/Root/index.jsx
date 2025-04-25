@@ -20,7 +20,8 @@ const Root = () => {
   const hideLayout =
     location.pathname === '/login' ||
     location.pathname === '/register' ||
-    location.pathname === '/cart/add';
+    location.pathname === '/cart/add' ||
+    location.pathname === '/admin';
 
   return (
     <>
@@ -30,7 +31,7 @@ const Root = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/about" element={<ShopingPage />} />
+        <Route path="/shoping" element={<ShopingPage />} />
         <Route path="/login" element={<SignIn />} />
         <Route path="/register" element={<SignUp />} />
         <Route path="/cart/add" element={<CardAdd />} />

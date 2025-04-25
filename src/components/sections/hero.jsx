@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { heroData } from '../../constants/heroData';
 import { Carousel } from 'antd';
 
@@ -9,7 +10,7 @@ const Hero = () => {
       autoplaySpeed={6000} // Har bir slayd 4 soniyada almashadi
       speed={2000} // Silliq o‘tish uchun 1 soniya
       arrows
-      pauseOnHover={false} // Sichqoncha kelsa ham slayd davom etsin
+      pauseOnHover={false}
     >
       {heroData.map((hero) => (
         <div key={hero.id} className="relative w-full h-screen">
@@ -31,7 +32,10 @@ const Hero = () => {
             <div className="max-w-lg">
               <h1 className="text-5xl font-bold mb-4">{hero.title}</h1>
               <p className="text-lg mb-6">{hero.description}</p>
-              <button className="bg-black text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-gray-800 transition">
+              <button
+                onClick={() => (window.location.href = '/shoping')} // JavaScript orqali navigatsiya
+                className="bg-black text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-gray-800 transition"
+              >
                 {hero.buttonText}
               </button>
             </div>
